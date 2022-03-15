@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+/* Todo o preset do corpo do projeto */
 body {
   font-family: "Monaco", monospace;
   min-height: 400px;
@@ -17,7 +18,7 @@ body {
   font-size: 20px;
 }
 
-
+/* Texto para add jogadores */
 .opcao {
   color: white;
   font-family: "Orbitron", sans-serif;
@@ -25,6 +26,7 @@ body {
   transition: transform 0.3s;
 }
 
+/* Efeito "hover" no texto add jogadores */
 .opcao:hover {
   transition: transform 0.3s;
   -ms-transform: scale(1.1);
@@ -32,12 +34,13 @@ body {
   transform: scale(1.1);
 }
 
-.container {
+/*.container {
   text-align: center;
   padding: 20px;
   height: 100vh;
-}
+}*/
 
+/* Titulo do projeto */
 .page-title {
   color: #ffffff;
   margin: 0 0 5px;
@@ -46,6 +49,7 @@ body {
   transition: transform 0.3s;
 }
 
+/* Efeito "hover" no titulo */
 .page-title:hover {
   transition: transform 0.3s;
   -ms-transform: scale(1.1);
@@ -53,33 +57,39 @@ body {
   transform: scale(1.1);
 }
 
+/* Sub-titulo/Legenda do projeto */
 .page-subtitle {
   color: #ffffff;
   margin-top: 5px;
   font-family: "Orbitron", sans-serif;
 }
 
+/* Logo Imersão Dev_ */
 .page-logo {
   width: 200px;
 }
 
-.alura-logo {
+
+/*.alura-logo {
   width: 40px;
   position: absolute;
   top: 10px;
   right: 10px;
-}
+}*/
 
+/* Tabela dos jogadores */
 table {
   border: 2px solid white;
   border-collapse: collapse;
   background-color: rgba(0, 0, 0, 0.527);
 }
 
+/* Textos do tipo "h1" */
 h1 {
   color: white;
 }
 
+/* Preset da tabela */
 th,
 tr,
 td {
@@ -87,6 +97,7 @@ td {
   color: rgb(255, 255, 255);
 }
 
+/* Regulagem da imagem dos jogadores */
 .imgJogador {
   max-height: 120px; 
   border-radius: 5px;
@@ -94,6 +105,7 @@ td {
   padding: auto;
 }
 
+/* Efeito "hover" na imagem dos jogadores */
 .imgJogador:hover {
   transition: transform 0.3s;
   -ms-transform: scale(1.1);
@@ -101,6 +113,7 @@ td {
   transform: scale(1.5);
 }
 
+/* Personalização exclusiva do campo de adicionar jogador e sua imagem */
 #adicionarJogador input {
   padding: 4px 40px;
   margin: 15px;
@@ -111,6 +124,7 @@ td {
   transition: transform 0.3s;
 }
 
+/* personalização dos botões 'Adicionar' jogador e 'Zerar' pontuação */
 .botaoZerar,
 .botaoAdd {
   width: 20vh;
@@ -132,6 +146,7 @@ td {
   font-weight: normal;
 }
 
+/* Efeito "hover" nos botões de 'Adicionar' jogador e 'Zerar' pontuação */
 .botaoAdd:hover,
 .botaoZerar:hover{
   transition: transform 0.1s;
@@ -140,6 +155,7 @@ td {
   transform: scale(1.1);
 }
 
+/* Efeito "hover" no inserimento de Nome do jogador e no URL de imagem e outros "inputs" */
 input:hover {
   transition: transform 0.8s;
   -ms-transform: scale(1.1);
@@ -147,6 +163,7 @@ input:hover {
   transform: scale(1.1);
 }
 
+/* Botões de vitoria, empate, derrota */
 .buttonA,
 .buttonD,
 .buttonE {
@@ -163,6 +180,7 @@ input:hover {
   text-shadow: 1px 1px 5px black, -1px -1px 5px lightgreen;
 }
 
+/* Logo da Imersao Dev_ */
 .imersaoDev {
   width: 200px;
   font-family: "Orbitron", sans-serif;
@@ -181,6 +199,7 @@ input:hover {
   transform: scale(1.1);
 }
 
+/* Criada para aumentar a fonte para melhor visualização */
 h3 {
   font-size: 150%;
 }

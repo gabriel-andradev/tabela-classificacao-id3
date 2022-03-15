@@ -1,11 +1,15 @@
+// Variaveis de informações dos jogadores e checagem de campeão
 var jogadores = [];
 var campeao = [0];
 
+// Função para calcular pontos do vencedor da rodada e dos empatados
 function calcularPontos(jogador) {
   var pontos = jogador.vitorias * 3 + jogador.empates;
   return pontos;
 }
 
+
+// Armazenar informações dos jogadores e exibir na tabela
 function exibir(jogadores) {
   var elemento = "";
   for (var i = 0; i < jogadores.length; i++) {
@@ -39,6 +43,7 @@ function exibir(jogadores) {
   tabelaJogadores.innerHTML = elemento;
 }
 
+// Calcular vitória de X jogador e adicionar na tabela
 function adicionarVitoria(i) {
   if (jogadores.length < 2) {
     document.getElementById("erro").innerHTML =
@@ -53,6 +58,7 @@ function adicionarVitoria(i) {
   exibir(jogadores);
 }
 
+// Calcular empates de X jogador(es) e adicionar na tabela
 function adicionarEmpate(i) {
   if (jogadores.length < 2) {
     document.getElementById("erro").innerHTML =
@@ -66,6 +72,7 @@ function adicionarEmpate(i) {
   exibir(jogadores);
 }
 
+// Adicionar derrota a X jogador(es) na tabela
 function adicionarDerrota(i) {
   if (jogadores.length < 2) {
     document.getElementById("erro").innerHTML =
@@ -79,6 +86,7 @@ function adicionarDerrota(i) {
   exibir(jogadores);
 }
 
+// Função para zerar tabela de pontos 
 function zerarTabela() {
   for (var i = 0; i < jogadores.length; i++) {
     var jogador = jogadores[i];
@@ -94,6 +102,7 @@ function zerarTabela() {
   exibir(jogadores);
 }
 
+// Função para adicionar jogador, com URL de imagem e permissão para usar .Gif e deixar mais dinâmico. "nota= criar function para excluir toda informação de jogador, para caso seja adicionado sem querer"
 function addJogador() {
   var campoNome = document.getElementById("campoNome").value;
   var campoImagem = document.getElementById("campoImagem").value;
@@ -134,6 +143,7 @@ function addJogador() {
   exibir(jogadores);
 }
 
+// Função para checar qual jogador está na frente da tabela em questão de mais pontuação total
 function checarCampeao() {
   resetarCampeao();
   if (jogadores[1]) {
@@ -157,6 +167,7 @@ function checarCampeao() {
   exibir(jogadores);
 }
 
+// Função para resetar o campeão caso seja ultrapassado ou empatado
 function resetarCampeao() {
   for (var i = 0; i < campeao.length; i++) {
     if (jogadores[campeao[i]].nome.slice(-2) == "👑") {
