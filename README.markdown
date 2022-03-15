@@ -14,6 +14,3 @@ Nomes personalizados. ✅
 Escolher quantos pontos cada rodada vale. ❎ a fazer.
 Zerar pontos individualmente ❎ a fazer.
 Excluir jogador individualmente ❎ a fazer.
-
- 
-
