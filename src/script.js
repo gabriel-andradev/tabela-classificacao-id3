@@ -24,13 +24,13 @@ function exibir(jogadores) {
       "</td><td>" +
       jogadores[i].pontos +
       "</td>" +
-      '<td><button onClick="adicionarVitoria(' +
+      '<td><button class="buttonA" onClick="adicionarVitoria(' +
       i +
       ')">Vitória</button></td>' +
-      '<td><button onClick="adicionarEmpate(' +
+      '<td><button class="buttonE" onClick="adicionarEmpate(' +
       i +
       ')">Empate</button></td>' +
-      '<td><button onClick="adicionarDerrota(' +
+      '<td><button class="buttonD" onClick="adicionarDerrota(' +
       i +
       ')">Derrota</button></td>' +
       "</tr></tr>";
@@ -46,14 +46,9 @@ function adicionarVitoria(i) {
     return;
   }
   var jogador = jogadores[i];
-  var derrotado = parseInt(Math.random() * jogadores.length);
   jogador.vitorias++;
   jogador.pontos = calcularPontos(jogador);
 
-  while (derrotado == i) {
-    derrotado = parseInt(Math.random() * jogadores.length);
-  }
-  jogadores[derrotado].derrotas++;
   checarCampeao();
   exibir(jogadores);
 }
@@ -65,14 +60,8 @@ function adicionarEmpate(i) {
     return;
   }
   var jogador = jogadores[i];
-  var empatado = parseInt(Math.random() * jogadores.length);
-  while (empatado == i) {
-    empatado = parseInt(Math.random() * jogadores.length);
-  }
   jogador.empates++;
-  jogadores[empatado].empates++;
   jogador.pontos = calcularPontos(jogador);
-  jogadores[empatado].pontos = calcularPontos(jogadores[empatado]);
   checarCampeao();
   exibir(jogadores);
 }
@@ -84,14 +73,8 @@ function adicionarDerrota(i) {
     return;
   }
   var jogador = jogadores[i];
-  var vitorioso = parseInt(Math.random() * jogadores.length);
   jogador.derrotas++;
 
-  while (vitorioso == i) {
-    vitorioso = parseInt(Math.random() * jogadores.length);
-  }
-  jogadores[vitorioso].vitorias++;
-  jogadores[vitorioso].pontos = calcularPontos(jogadores[vitorioso]);
   checarCampeao();
   exibir(jogadores);
 }

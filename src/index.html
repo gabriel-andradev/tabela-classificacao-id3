@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tabela de classificação</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <html>
 
 <head>
@@ -7,8 +17,11 @@
 </head>
 
 <body>
-  <h1>Tabela de classificação</h1>
-
+  <h1 class="opcao">Tabela de classificação</h1>
+  <div>  
+    <img class="imersaoDev" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt="">
+  </div>
+  <h3 class="opcao">Adicione os jogadores</h3>
   <table style="width:100%">
     <thead>
       <tr>
@@ -26,10 +39,15 @@
   <div id="adicionarJogador">
     <input id="campoNome" type="text" placeholder="Nome do jogador" />
     <input id="campoImagem" type="text" placeholder="URL da imagem" />
-    <button class="botaoAdd" id="botaoAdd" onClick="addJogador()">Adicionar</button>
   </div>
+  <button class="botaoAdd" id="botaoAdd" onClick="addJogador()">Adicionar</button>
   <button class="botaoZerar" id="botaoZerar" onClick="zerarTabela()">Zerar</button>
   <div id="erro"></div>
 </body>
 
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
 </html>
