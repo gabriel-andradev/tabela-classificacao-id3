@@ -11,6 +11,6 @@ A cada rodada jogada o vencedor leva 3 pontos, empate leva 1 e derrota é nula.
 • Zerar pontuação sem perder dados dos jogadores.
 • Permissão para usar .Gif em fotos dos jogadores.
 • Nomes personalizados.
-• Escolher quantos pontos cada rodada vale. a fazer.
-• Zerar pontos individualmente a fazer.
-• Excluir jogador individualmente a fazer.
+• Escolher quantos pontos cada rodada vale = a fazer.
+• Zerar pontos individualmente = a fazer.
+• Excluir jogador individualmente = a fazer.
