@@ -79,8 +79,10 @@ body {
 
 /* Tabela dos jogadores */
 table {
-  border: 2px solid white;
+  /*border: 1px solid rgb(0, 0, 0);*/
+  outline: 1px lightgreen solid;
   border-collapse: collapse;
+  border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.527);
 }
 
@@ -93,13 +95,15 @@ h1 {
 th,
 tr,
 td {
-  border: solid 1px white;
+  /*border: solid 1px white;*/
   color: rgb(255, 255, 255);
+  /*outline: 1px lightgreen solid;*/
 }
 
 /* Regulagem da imagem dos jogadores */
 .imgJogador {
-  max-height: 120px; 
+  max-height: 120px;
+  min-height: auto;
   border-radius: 5px;
   box-shadow: 1px 1px 2px rgb(255, 255, 255), -1px -1px 2px rgb(255, 255, 255);
   padding: auto;
